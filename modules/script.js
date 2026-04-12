@@ -18,6 +18,8 @@ let a =100;
 const nickname = "frooti";
 
 //Scope [global , block , functional]
+
+
 // Block Scope → Code inside {} like in loops, if , etc.
 // Function Scope → Code inside a function
 // let and const follow block scope.
@@ -25,9 +27,24 @@ const nickname = "frooti";
 
 
 
-                //  Temporal Dead zone
+//  Temporal Dead zone
+
+
 // The Temporal Dead Zone is the time between:
 // when a variable is declared and when it is initialized (assigned a value)
 // During this period, you cannot access the variable, even though it is in scope.
 console.log(answer);
 let answer = "yes";
+
+//HOISTING
+
+// JavaScript prepares memory before running code.
+// It moves all declarations to the top — this is called hoisting.
+// But:var is hoisted and set to undefined
+// let and const are hoisted but not initialized — so accessing them early gives ReferenceError
+
+// why const allows changing object properties
+// const locks the reference (memory address) But the object’s properties can still be changed means const does not make objects immutable—it only prevents reassignment of the variable.
+const person ={name : "Ileen"};
+person.name = "Singh"; //it is allowed
+person ={}; //not allowed
