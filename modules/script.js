@@ -101,38 +101,66 @@
 // true + 1 // 2
 // null + 1
 
-// truthy vs falsy values
+// // truthy vs falsy values
 
-// Falsy values
-// Falsy values are values that evaluate to false in a boolean context; all other values are truthy.
+// // Falsy values
+// // Falsy values are values that evaluate to false in a boolean context; all other values are truthy.
 
-// false
-// 0
-// -0
-// 0n (BigInt zero)
-// ""
-// null
-// undefined
-// NaN
+// // false
+// // 0
+// // -0
+// // 0n (BigInt zero)
+// // ""
+// // null
+// // undefined
+// // NaN
 
-//Truthy values
+// //Truthy values
 
-// "hello"
-// 1
-// -5
-// []
-// {}
-// true
-// "0"
-// "false"
+// // "hello"
+// // 1
+// // -5
+// // []
+// // {}
+// // true
+// // "0"
+// // "false"
 
-// NaN is a special numeric value that represents an invalid number result.
+// // NaN is a special numeric value that represents an invalid number result.
 
-0 / 0           // NaN
-"abc" / 2       // NaN
-Number("hello") // NaN
+// 0 / 0           // NaN
+// "abc" / 2       // NaN
+// Number("hello") // NaN
 
-// typeof NaN is number because failed mathematical operation number hai isliye
+// // typeof NaN is number because failed mathematical operation number hai isliye
 
-// Difference between null and undefined
-// undefined means a variable is declared but not assigned, while null is an explicitly assigned empty value.
+// // Difference between null and undefined
+// // undefined means a variable is declared but not assigned, while null is an explicitly assigned empty value.
+
+
+// //OPERATORS
+// // 1. ARITHMETIC OPERATORS (+, -, *, /, %, **)
+// // 2. ASSIGNMENT OPERATORS(= += -= *=, /=, %= )
+// // 3. COMPARSION OPERATORS(== === != !== > < >= <= )
+// // Difference between == and === , == check krta h bss value but === checks both type and value
+// // 4. LOGICAL OPERATORS->uesd in conditions(&& || !)
+// // 5. UNARY OPERATOR(TYPEOF ++ --)
+// // 6. TERNARY OPERATOR (condn ? value1:value2)
+// // 7. BITWISE OPERATOR (& | ^ ~ << >>)
+
+// // !! use krte h nature jaane k liye truthy value h ya falsy
+
+//building rock paper scissor with if else control flow
+
+function rps(user, computer){
+    if(user === computer) return "draw";
+    if(user ==="Rock" && computer === "Scissor") return "user";
+    if(user ==="Scissor" && computer === "Paper") return "user";
+    if(user ==="Paper" && computer === "Rock") return "user";
+
+    return "computer";
+}
+
+console.log(rps("Rock" ,"Rock"));
+console.log(rps("Rock" ,"Scissor"));
+console.log(rps("Rock" ,"Paper"));
