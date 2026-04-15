@@ -2,6 +2,7 @@
 // //const - value change ni hoti kbhi
 // //var(es5 ka part hai) -container stores values
 
+
 // //var
 
 // var username = "ileen";
@@ -150,17 +151,63 @@
 
 // // !! use krte h nature jaane k liye truthy value h ya falsy
 
-//building rock paper scissor with if else control flow
+// //building rock paper scissor with if else control flow
 
-function rps(user, computer){
-    if(user === computer) return "draw";
-    if(user ==="Rock" && computer === "Scissor") return "user";
-    if(user ==="Scissor" && computer === "Paper") return "user";
-    if(user ==="Paper" && computer === "Rock") return "user";
+// function rps(user, computer){
+//     if(user === computer) return "draw";
+//     if(user ==="Rock" && computer === "Scissor") return "user";
+//     if(user ==="Scissor" && computer === "Paper") return "user";
+//     if(user ==="Paper" && computer === "Rock") return "user";
 
-    return "computer";
+//     return "computer";
+// }
+
+// console.log(rps("Rock" ,"Rock"));
+// console.log(rps("Rock" ,"Scissor"));
+// console.log(rps("Rock" ,"Paper"));
+
+// //LOOPS
+
+//for loop
+// for(start;end ;change)
+
+// print 1 to 100 number
+for(let i=1 ;i<101 ;i++){
+    console.log(i);
 }
 
-console.log(rps("Rock" ,"Rock"));
-console.log(rps("Rock" ,"Scissor"));
-console.log(rps("Rock" ,"Paper"));
+//while loop
+//syntax
+
+// start
+// while(end){
+//     //code
+//     change
+// }
+
+let i =1;
+while(i<101){
+    console.log(i);
+    i++;
+}
+
+//do-while loop
+let j=1;
+do{
+    console.log(j);
+    j++;
+}
+while(j<20)
+
+//Question -> Ask the user for a number and print whether each number from 1 to that number is even or odd.
+
+let num = prompt("Give a number : ");
+
+for(let i = 1 ; i<=num ;i++){
+    if(i%2 === 0){
+        console.log(`${i} is Even`);
+    }
+    else{
+        console.log(`${i} is Odd`);
+    }
+}
