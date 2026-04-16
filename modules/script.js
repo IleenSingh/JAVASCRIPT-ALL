@@ -168,46 +168,72 @@
 
 // //LOOPS
 
-//for loop
-// for(start;end ;change)
+// //for loop
+// // for(start;end ;change)
 
-// print 1 to 100 number
-for(let i=1 ;i<101 ;i++){
-    console.log(i);
-}
-
-//while loop
-//syntax
-
-// start
-// while(end){
-//     //code
-//     change
+// // print 1 to 100 number
+// for(let i=1 ;i<101 ;i++){
+//     console.log(i);
 // }
 
-let i =1;
-while(i<101){
-    console.log(i);
-    i++;
-}
+// //while loop
+// //syntax
 
-//do-while loop
-let j=1;
-do{
-    console.log(j);
-    j++;
-}
-while(j<20)
+// // start
+// // while(end){
+// //     //code
+// //     change
+// // }
 
-//Question -> Ask the user for a number and print whether each number from 1 to that number is even or odd.
+// let i =1;
+// while(i<101){
+//     console.log(i);
+//     i++;
+// }
 
-let num = prompt("Give a number : ");
+// //do-while loop
+// let j=1;
+// do{
+//     console.log(j);
+//     j++;
+// }
+// while(j<20)
 
-for(let i = 1 ; i<=num ;i++){
-    if(i%2 === 0){
-        console.log(`${i} is Even`);
-    }
-    else{
-        console.log(`${i} is Odd`);
-    }
-}
+// //Question -> Ask the user for a number and print whether each number from 1 to that number is even or odd.
+
+// let num = prompt("Give a number : ");
+
+// for(let i = 1 ; i<=num ;i++){
+//     if(i%2 === 0){
+//         console.log(`${i} is Even`);
+//     }
+//     else{
+//         console.log(`${i} is Odd`);
+//     }
+// }
+
+
+//FUCTIONS
+
+//1st meethod
+//function declaration
+//  function fun_name(){
+//   //code
+//   }
+
+//2nd method (variable bna k uske andar fuction hoga ,jha function ka naam hi variable hoga)
+//function expression
+
+// let fnc = function(){
+// }
+//yha fnc hi function ka naam hai
+
+
+//3rd method Arrow function
+
+// let fnc = ()=>{
+// }
+
+//Parameters vs Arguements
+// Parameters are variables in a function definition, while arguments are the actual values passed when calling the function.
+
