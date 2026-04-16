@@ -213,27 +213,62 @@
 // }
 
 
-//FUCTIONS
+// //FUCTIONS
 
-//1st meethod
-//function declaration
-//  function fun_name(){
-//   //code
-//   }
+// //1st meethod
+// //function declaration
+// //  function fun_name(){
+// //   //code
+// //   }
 
-//2nd method (variable bna k uske andar fuction hoga ,jha function ka naam hi variable hoga)
-//function expression
+// //2nd method (variable bna k uske andar fuction hoga ,jha function ka naam hi variable hoga)
+// //function expression
 
-// let fnc = function(){
+// // let fnc = function(){
+// // }
+// //yha fnc hi function ka naam hai
+
+
+// //3rd method Arrow function
+
+// // let fnc = ()=>{
+// // }
+
+// //Parameters vs Arguements
+// // Parameters are variables in a function definition, while arguments are the actual values passed when calling the function.
+
+// // Default Rest Spread parameter
+
+// //1. Default
+// // Used when a value is missing
+
+// // Example:
+// function greet(name = "Guest") {
+//   console.log("Hello " + name);
 // }
-//yha fnc hi function ka naam hai
+
+// greet();        // Hello Guest
+// greet("Ileen");  // Hello Fumo
 
 
-//3rd method Arrow function
+// //2. Rest Parameters (...) → Collect
 
-// let fnc = ()=>{
+// //Used when you don’t know how many arguments will come
+
+// // Example:
+// function sum(...numbers) {
+//   console.log(numbers);
 // }
 
-//Parameters vs Arguements
-// Parameters are variables in a function definition, while arguments are the actual values passed when calling the function.
+// sum(1, 2, 3, 4, 5, 6);
 
+// //3. Spread Operator (...) → Expand
+// // (Opposite of rest) function call k time pe hota h use
+
+// // Example:
+// const arr = [1, 2, 3];
+
+// console.log(...arr);
+
+
+ 
