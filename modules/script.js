@@ -271,4 +271,34 @@
 // console.log(...arr);
 
 
- 
+//FIRST CLASS FUNCTION -> Functions are treated like normal values or variables
+// 1.treat them like values or store them 
+const greet = function(){
+    console.log("Hiiiiiiiiii!")
+}
+
+greet();
+
+// 2.Pass functions like a value
+function sayHello() {
+  console.log("Hello");
+}
+
+function execute(fn) {
+  fn();
+}
+
+execute(sayHello);
+// execute k andar sayhello pass hua or fn ek variable h toh fn sayhello fun ko hold krrliya 
+
+// 3. Returning a function
+// A function gives back another function 
+function outer() {
+  return function() {
+    console.log("Hi");
+  };
+}
+
+const result = outer();
+result(); 
+
