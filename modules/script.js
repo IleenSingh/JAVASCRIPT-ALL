@@ -302,3 +302,33 @@ function outer() {
 const result = outer();
 result(); 
 
+// HIGH ORDER FUNCTION ^
+// A higher-order function is a function that takes another function as an argument or returns a function.
+
+// Pure vs Impure functions
+// Pure functions are predictable and have no side effects, while impure functions depend on or modify external state.
+// Aisa fn jo bhar ki valur ko nah badle is pure fn and vice versa impure fn
+
+// PURE FUNCTION
+ function add(a, b) {
+  return a + b;
+}
+// ye pure functions kyuki ye modify ni krr rha h kch outside
+
+//IMPURE FUNCTION
+// an external variable does NOT automatically make a function impure It becomes impure when it depends on OR modifies external state
+
+// ye pure h kyuki tax rate ka value modify bina kiye function chl rha h 
+
+const taxRate = 0.1;
+function calculateTax(amount) {  
+  return amount * taxRate;
+
+}
+
+// yha ye impure function h kyuki balance ki value function m ai baar change horhi h 
+// modifies external value
+let balance = 100;
+function withdraw(amount) {
+  balance -= amount;  return balance;
+}
